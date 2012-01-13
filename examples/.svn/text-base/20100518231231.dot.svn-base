@@ -1,0 +1,25 @@
+digraph asde91 { 
+ranksep=.75; size = "7.5,7.5";
+{
+node [shape=plaintext, fontsize=16];
+/* the time-line graph */
+"State 2" -> "State 4" -> "State 8" -> "State 12" -> "State 20" -> "State 32";
+node [shape=record];
+{ rank = same; "State 2"; "2One" [label ="One (1)| One = 1"];  "21" [label ="1 | cons."];  }
+{ rank = same; "State 4"; "4Two" [label ="Two (2)| Two = 2"];  "42" [label ="2 | cons."];  }
+{ rank = same; "State 8"; "8Three" [label ="Three (3)| Three = One + Two"];  }
+{ rank = same; "State 12"; "12Four" [label ="Four (4)| Four = Three + One"];  }
+{ rank = same; "State 20"; "20Six" [label ="Six (6)| Six = Four + Two"];  }
+{ rank = same; "State 32"; "32Nine" [label ="Nine (9)| Nine = Six + Three"];  }
+"21" -> "2One";
+"2One" -> "8Three";
+"42" -> "4Two";
+"4Two" -> "8Three";
+"8Three" -> "12Four";
+"2One" -> "12Four";
+"12Four" -> "20Six";
+"4Two" -> "20Six";
+"20Six" -> "32Nine";
+"8Three" -> "32Nine";
+}
+}

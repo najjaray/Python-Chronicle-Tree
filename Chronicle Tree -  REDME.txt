@@ -1,0 +1,20 @@
+Project Name:		Chronicle Tree
+Project Purpose:	Education
+Project Supervisor:	Greg Benson, USF Professor 
+Participants:		Ali Alnajjar USF MS Web Science Student
+Contact:			najjaray@gmail.com
+====================================================================================
+
+to be able to use this code you need a to have:
+	(1)	Stackless Python:		visit http://www.stackless.com/ to lean more about stackless python and how to install/use it.
+	(2) Pydot:					visit http://code.google.com/p/pydot/ to lean more about Pydot and how to install/use it.
+
+USAGE: 
+python sa.py command args
+command:
+	run <prog.py> <args>
+	record <statefile> <prog.py> <args>
+	play <statefile> [<index|range>]
+	info <statefile>
+	examine <statefile> <index|range> <ex_code>
+	examine_all <statefile> <ex_code>

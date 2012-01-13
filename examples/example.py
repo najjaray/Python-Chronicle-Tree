@@ -1,0 +1,9 @@
+One = 1
+Two = 2
+Three = One + Two
+Four = Three + One
+Five = Four + One
+Six = Four + Two
+Seven = Four + Three
+Eight = Seven + One
+Nine = Six + Three
